@@ -10,12 +10,18 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         var txv: TextView = findViewById<TextView>(R.id.txv)
-        txv.text = "Hello tcyang"
+        txv.text = "Hello ying"
         TestMaster()
+        TestDEV()
     }
 
     fun TestMaster(){
         var txv:TextView = findViewById<TextView>(R.id.txv)
         txv.text = "Master分支"
+    }
+
+    fun TestDEV(){
+        var txv:TextView = findViewById<TextView>(R.id.txv)
+        txv.text = "Dev分支"
     }
 }
